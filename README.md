@@ -1,5 +1,9 @@
-**Update rates**
+**Start project**
+```bash
+docker compose up -d --build
+```
 
+**Update rates**
 ```bash
 curl --location 'http://localhost:8000/api/fetch-prices' \
 --header 'Content-Type: application/json' \
@@ -15,6 +19,7 @@ curl --location 'http://localhost:8000/api/fetch-prices' \
 ```bash
 curl -X GET "http://localhost:8000/api/get-prices?symbols=BTCUSDT,ETHUSDT"
 ```
+
 Get all stored prices:
 ```bash
 curl -X GET "http://localhost:8000/api/get-prices"
